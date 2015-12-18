@@ -1,0 +1,264 @@
+*{
+    margin: 0px; /*Устанавливаем margin 0 для всего сайта*/
+    padding: 0px; /*Устанавливаем padding 0 для всего сайта*/
+}
+
+body {
+    font-family: Segoe UI, Segoe UI Semilight, sans-serif; /*шрифты веб-сайта*/
+    background: #ffffff;
+    background-repeat: no-repeat;
+    color: #262626; /*цвет текста по умолчанию*/
+
+}
+a:link {
+    color: #3da570; /*цвет ссылок*/
+}
+a:visited {
+    color: #109cb7; /*цвет посещенной ссылки*/
+}
+a:hover {
+    color: #109cb7; /*цвет ссылки, на которую наведен курсор*/
+}
+a:active {
+    color: #3da570; /*цвет активных ссылок*/
+}
+p {
+    font-size: 8px; /*Устанавливаем размер текста*/
+    line-height: 18px; /*Устанавливаем высоту строки по умолчанию*/
+    text-align: justify; /*выравниваем текст по ширине параграфа*/
+}
+h1 {
+    color: #3da570; /*цвет заголовков с тегом H1*/
+    font-size: 24px; /*размер шрифта заголовка с тегом H1*/
+    font-weight: normal; /*установка насыщенности шрифта заголовка с тегом H1 на нормальную*/
+}
+h2 {
+    color: #262626; /*цвет заголовков с тегом H2*/
+    font-size: 12em; /*размер шрифта заголовка с тегом H2*/
+    font-weight: normal; /*установка насыщенности шрифта заголовка с тегом H2 на нормальную*/
+}
+h3 {
+    color: #262626; /*цвет заголовков с тегом H3*/
+    font-size: 10px; /*размер шрифта заголовка с тегом H3*/
+    font-weight: normal; /*установка насыщенности шрифта заголовка с тегом H3 на нормальную*/
+}
+h4 {
+    color: #262626; /*цвет заголовков с тегом H4*/
+    font-size: 8px; /*размер шрифта заголовка с тегом H4*/
+    font-weight: normal; /*установка насыщенности шрифта заголовка с тегом H4 на нормальную*/
+}
+img {
+    border:none; /*Удаляем рамки вокруг изображений*/
+}
+.float-left {
+    float:left; /*класс параметра float left*/
+}
+.float-right {
+    float:right; /*класс параметра float right*/
+}
+/* ----------Стили контейнера---------- */
+#container {
+    width: 900px; /*ширина контейнера*/
+    height: 1680px;
+    margin-top: 0px; /*Устанавливаем верхний отступ на 0*/
+    margin-right: auto; /*Устанавливаем правый отступ в значение авто, т.е центрируем сайт*/
+    margin-left: auto; /*Устанавливаем левый отступ в значение авто, т.е центрируем сайт*/
+}
+/* ----------Стили заголовка---------- */
+#header {
+    width: 900px;
+    height: 108px;
+    margin-bottom: 80px;
+    background-image: url(images/header_bg.png); /*Установка фонового изображения заголовка*/
+    background-clip: padding-box;
+    background-repeat: no-repeat; /*Отмена повтора фонового изображения*/
+    float: left;/*Устанавливаем положение слоя заголовка влево*/
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3); /* Тень */
+    /*<img src="images/header_bg.png" class="bg">*/
+}
+
+
+#to {
+    float: left; /*Устанавливаем положение слоя элементов заголовка влево*/
+    width: 900px; /*задаем ширину слоя элементов заголовка в 900 пикселей*/
+    padding-top: 20px; /*Задаем отступ элементов заголовка от верха сайта в 20 пикселей*/
+}
+/* ----------Стили логотипа---------- */
+#logo {
+    float: left; /*Устанавливаем положение слоя с логотипом влево*/
+    height: 61px; /*Устанавливаем высоту слоя логотипа в 61 пиксель, которая равна высота изображения с логотипом*/
+    width: 315px; /*Устанавливаем ширину слоя логотипа в 315 пикселей, которая равна ширине изображения с логотипом*/
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+/* ----------Стили навигационной панели---------- */
+#navigation {
+    margin-top: 33px;
+    float: right; /*Устанавливаем положение навигационной панели вправо*/
+    height: 108px; /*Устанавливаем высоту панели в 108 пикселей*/
+}
+.navilinks ul {
+    margin-left: 0px; /*Устанавливаем margin 0 для нашего списка ссылок*/
+    margin-right: 10px;
+    padding: 0px; /*Устанавливаем padding 0 для нашего списка ссылок */
+    float: right;
+}
+.navilinks li {
+    display: inline; /*устанавливаем строчный элемент*/
+    list-style-type: none; /*Удаляем маркировку списка из навигационной панели*/
+    padding-right: 60px; /*Устанавливаем положение пунктов навигации влево*/
+}
+.navilinks li a {
+    text-decoration: none; /*Удаляем подчеркивание ссылок панели навигации*/
+    font-size: 22px; /*размер шрифта панели навигации*/
+    color: #262626; /*Цвет ссылок панели навигации*/
+    padding-bottom: 2px; /*устанавливаем отступ от нижнего края слоя для ссылок панели навигации*/
+}
+.navilinks li a:hover {
+    border-bottom-width: medium; /*Устанавливаем подчеркивание средней толщины для ссылок панели навигации*/
+    border-bottom-style: solid; /*делаем подчеркивание ссылок сплошным*/
+    border-bottom-color: #262626; /*Устанавливаем цвет подчеркивания*/
+}
+.navilinks li.current a{
+    border-bottom-width: medium; /*Устанавливаем подчеркивание средней толщины для ссылок панели навигации*/
+    border-bottom-style: solid; /*делаем подчеркивание ссылок сплошным*/
+    border-bottom-color: #262626; /*Устанавливаем цвет подчеркивания*/
+}
+
+.top_bt {
+    /*display: inline-block;*/
+    margin-right: 30px;
+    margin-left: 80px;
+    background-color: white;
+    width: 300px;
+    height: 60px;
+    /*font: Segoe UI Semilight;*/
+    font-style: inherit;
+    font-size: 22px;
+    border: 1px solid;
+    border-color: mediumseagreen;
+}
+
+.top_bt a {
+    width: 150px;
+    margin: auto;
+    color: mediumseagreen;
+    text-decoration: none;
+}
+
+.mid_bt {
+    width: 140px;
+    height: 35px;
+    margin-top: 116px;
+    font-style: inherit;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: #d6d6d6;
+    background-color: #e4e4e4;
+    border-top-right-radius: 20px;
+}
+
+#mid_bt1 {
+    margin-left: 53px;
+    width: 140px;
+    height: 35px;
+    margin-top: 116px;
+    font-style: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: #d6d6d6;
+    background-color: #f6f6f6;
+}
+#mid_bt2 {
+    margin-left: -3px;
+    width: 140px;
+    height: 35px;
+    margin-top: 116px;
+    font-style: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: #d6d6d6;
+    background-color: #d9d9d9;
+}
+
+.mid_bt a {
+    width: 150px;
+    margin: auto;
+    color: #262626;
+    text-decoration: none;
+}
+
+.current{
+    background-color: #f6f6f6;
+}
+
+#cash {
+    margin-top: 0px;
+    margin-left: 53px;
+    margin-right: 86px;
+    width: 778px;
+    height: 676px;
+    border: 1px solid;
+    border-color: #d6d6d6;
+    background: #f6f6f6;
+    font-size: 20px;
+}
+
+#oil {
+    margin-top: 151px;
+    margin-left: 53px;
+    margin-right: 86px;
+    width: 778px;
+    height: 144px;
+    border: 1px solid;
+    border-color: #d6d6d6;
+    background: #f6f6f6;
+    font-size: 20px;
+}
+
+td {
+    padding: 3px;
+    border-bottom: solid 1px #d6d6d6;
+}
+
+.dark {
+    background: #e4e4e4;
+}
+
+.value {
+    text-align: center;
+    border-left: solid 1px #d6d6d6;
+}
+
+#footer_bg {
+    width: 900px;
+    height: 348px;
+    margin-top: 280px;
+    padding: 30px;
+    background-color: #d6d6d6;
+}
+
+p {
+    width: 350px;
+    height: 270px;
+    margin-top: auto;
+    line-height: 1.5;
+    padding: 4px;
+    position: relative;
+    float: left;
+    font-size: 20px;
+    text-align: left;
+}
+
+#p1 {
+    margin-right: 95px;
+}
+
+#p2 {
+    padding-right: 20 px;
+    margin-left: 75px;
+    border-left: 1px solid #262626;
+}
